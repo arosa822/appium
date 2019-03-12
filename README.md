@@ -1,7 +1,7 @@
 # Appium testing
 
 
-## Contente:
+## Contents:
 
 #### Android
    * emuCalc.py
