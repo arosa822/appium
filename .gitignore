@@ -1,1 +1,6 @@
-./Screen\ recordings/
+Screen\ recordings
+ios/.DS_Store
+ios/appium-ios-basic
+ios/tests/__pycache__/test_login.cpython-37-PYTEST.pyc
+.DS_Store
+Screen recordings/
