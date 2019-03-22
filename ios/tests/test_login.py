@@ -9,7 +9,7 @@ class LoginTests(unittest.TestCase):
     def setUp(self):
         app = ("/Users/cpuser/Library/Developer/Xcode/DerivedData/AppiumTest-dqwwwjslwdatusachvwyqyuijsfm/Build/Products/Debug-iphonesimulator/AppiumTest.app")
         self.driver = webdriver.Remote(
-                command_executor = 'http://localhost:4723/wd/hub',
+                command_executor = 'http://127.0.0.1:4723/wd/hub',
                 desired_capabilities={
                     'app':app,
                     'platformName': 'iOS',
@@ -23,7 +23,7 @@ class LoginTests(unittest.TestCase):
     # test case 1 - testEmailField
     def testEmailField(self):
         emailTF = self.driver.find_element_by_accessibility_id('emailTextField')
-        email.TF.send_keys("test@appcoda.com")
+        emailTF.send_keys('test@appcoda.com')
         emailTF.send_keys(keys.RETURN)
         sleep(1)
         self.assertEqual(emailTF.getA_attribut("Value"), "test@appcoda.com")

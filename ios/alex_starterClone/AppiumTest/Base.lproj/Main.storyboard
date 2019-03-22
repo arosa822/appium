@@ -18,19 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cx5-fK-1Oi">
-                                <rect key="frame" x="41" y="259" width="292" height="44"/>
-                                <accessibility key="accessibilityConfiguration" identifier="emailTextField" label="Email TextField"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="SRS-v1-5Xj"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="cyZ-A0-dtr"/>
-                                </connections>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sP0-2Y-LH8">
                                 <rect key="frame" x="41" y="311" width="292" height="44"/>
                                 <accessibility key="accessibilityConfiguration" identifier="passwordTextField" label="password TextField"/>
@@ -58,6 +45,19 @@
                                     <segue destination="BDu-kH-W5L" kind="show" id="2bh-c6-Yup"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cx5-fK-1Oi">
+                                <rect key="frame" x="41" y="259" width="292" height="44"/>
+                                <accessibility key="accessibilityConfiguration" identifier="emailTextField" label="Email TextField"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="SRS-v1-5Xj"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="cyZ-A0-dtr"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.28235294117647058" green="0.60392156862745094" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
